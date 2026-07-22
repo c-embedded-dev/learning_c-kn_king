@@ -13,18 +13,18 @@
 #include <stdio.h>
 #include <stdbool.h>
 
-#define side_of_square 9
+#define SIDE_OF_SQUARE 9
 
 int main(void)
 {
-    char checker_board[side_of_square][side_of_square]= {0};
+    char checker_board[SIDE_OF_SQUARE][SIDE_OF_SQUARE]= {0};
     bool row = false;
 
-    for (int x = 0; x < side_of_square; x++)
+    for (int x = 0; x < SIDE_OF_SQUARE; x++)
     {
-        for (int y = 0;y < side_of_square ;y++)
+        for (int y = 0;y < SIDE_OF_SQUARE ;y++)
         {
-            if (row == true && y < side_of_square)
+            if (row == true && y < SIDE_OF_SQUARE)
             {
                 checker_board[x][y]='R';
                 printf("%c  ", checker_board[x][y]);
@@ -32,7 +32,7 @@ int main(void)
                 checker_board[x][y]='B';
                 printf("%c  ", checker_board[x][y]);
             }
-            if (row == false && y < side_of_square)
+            if (row == false && y < SIDE_OF_SQUARE)
             {
                 checker_board[x][y]='B';
                 printf("%c  ", checker_board[x][y]);

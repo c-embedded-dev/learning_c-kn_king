@@ -11,10 +11,11 @@
  */
 
 #include <stdio.h>
-#define chess_size 8
+#define CHESS_SIZE 8
+
 int main(void)
 {
-    const char chess_board[chess_size][chess_size] = {
+    const char chess_board[CHESS_SIZE][CHESS_SIZE] = {
         {'r', 'n', 'b', 'q', 'k', 'b', 'n', 'r'},
         {'p', 'p', 'p', 'p', 'p', 'p', 'p', 'p'},
         {' ', '.', ' ', '.', ' ', '.', ' ', '.'},
@@ -24,9 +25,9 @@ int main(void)
         {'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P'},
         {'R', 'N', 'B', 'Q', 'K', 'B', 'N', 'R'},};
 
-    for (int x = 0; x < chess_size; x++)
+    for (int x = 0; x < CHESS_SIZE; x++)
         {
-            for (int y = 0;y < chess_size ; y++)
+            for (int y = 0;y < CHESS_SIZE ; y++)
             {
                     printf("%c  ", chess_board[x][y]);
             }
